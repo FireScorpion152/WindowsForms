@@ -26,15 +26,7 @@ namespace Clock
 
             this.Location = new Point(Screen.PrimaryScreen.Bounds.Width - this.Width, 50);
         }
-        void CustomFonts()
-        {
-            PrivateFontCollection pfc = new PrivateFontCollection();
-
-            pfc.AddFontFile(Path.Combine(Application.StartupPath, "a_AlternaSw.ttf"));
-
-            labelTime.Font = new Font(pfc.Families[0], 18, FontStyle.Regular);
-
-        }
+       
         private void timer_Tick(object sender, EventArgs e)
         {
             labelTime.Text = DateTime.Now.ToString("hh:mm:ss tt", System.Globalization.CultureInfo.InvariantCulture);
@@ -125,54 +117,74 @@ namespace Clock
             }
         }
 
-        private void cmCB_Red_CheckedChanged(object sender, EventArgs e)
-        {
-            if(cmCB_Red.Checked)
-            {
-                labelTime.BackColor = Color.Red;
-                cmCB_Green.Checked = false;
-                cmCB_Blue.Checked = false;
-                cmCB_Default.Checked = false;
+        //private void cmCB_Red_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if(cmCB_Red.Checked)
+        //    {
+        //        labelTime.BackColor = Color.Red;
+        //        cmCB_Green.Checked = false;
+        //        cmCB_Blue.Checked = false;
+        //        cmCB_Default.Checked = false;
 
-            }
-            else {
-                cmCB_Default.Checked = true;
-                labelTime.BackColor = Color.AliceBlue;
+        //    }
+        //    else {
+        //        cmCB_Default.Checked = true;
+        //        labelTime.BackColor = Color.AliceBlue;
+        //    }
+        //}
+
+        //private void cmCB_Green_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if (cmCB_Green.Checked)
+        //    {
+        //        labelTime.BackColor = Color.Green;
+        //        cmCB_Red.Checked = false;
+        //        cmCB_Blue.Checked = false;
+        //        cmCB_Default.Checked = false;
+        //    }
+        //    else
+        //    {
+        //        cmCB_Default.Checked = true;
+        //        labelTime.BackColor = Color.AliceBlue;
+        //    }
+        //}
+
+        //private void cmCB_Blue_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if (cmCB_Blue.Checked)
+        //    {
+        //        labelTime.BackColor = Color.Blue;
+        //        cmCB_Green.Checked = false;
+        //        cmCB_Red.Checked = false;
+        //        cmCB_Default.Checked = false;
+        //    }
+        //    else
+        //    {
+        //        cmCB_Default.Checked = true;
+        //        labelTime.BackColor = Color.AliceBlue;
+        //    }
+        //}
+        void SetBackgroundColor(object sender, EventArgs e)
+        {
+            switch ((sender as ToolStripMenuItem).Text)
+            {
+                case "Red":     labelTime.BackColor = Color.Red; break;
+                case "Green":   labelTime.BackColor = Color.Green; break;
+                case "Blue":    labelTime.BackColor = Color.Blue; break;
+                case "Default": labelTime.BackColor = Color.AliceBlue; break;
             }
         }
-
-        private void cmCB_Green_CheckedChanged(object sender, EventArgs e)
+        void SetForegroundColor(object sender, EventArgs e)
         {
-            if (cmCB_Green.Checked)
+            switch ((sender as ToolStripMenuItem).Text)
             {
-                labelTime.BackColor = Color.Green;
-                cmCB_Red.Checked = false;
-                cmCB_Blue.Checked = false;
-                cmCB_Default.Checked = false;
-            }
-            else
-            {
-                cmCB_Default.Checked = true;
-                labelTime.BackColor = Color.AliceBlue;
+                case "BlueViolet": labelTime.ForeColor = Color.BlueViolet; break;
+                case "SeaShell": labelTime.ForeColor = Color.SeaShell; break;
+                case "Snow": labelTime.ForeColor = Color.Snow; break;
+                case "Default": labelTime.ForeColor = Color.Black; break;
             }
         }
-
-        private void cmCB_Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cmCB_Blue.Checked)
-            {
-                labelTime.BackColor = Color.Blue;
-                cmCB_Green.Checked = false;
-                cmCB_Red.Checked = false;
-                cmCB_Default.Checked = false;
-            }
-            else
-            {
-                cmCB_Default.Checked = true;
-                labelTime.BackColor = Color.AliceBlue;
-            }
-        }
-                private void cmCB_Default_CheckedChanged(object sender, EventArgs e)
+        private void cmCB_Default_CheckedChanged(object sender, EventArgs e)
         {
                 cmCB_Red.Checked = false;
                 cmCB_Green.Checked = false;
@@ -184,5 +196,5 @@ namespace Clock
                         labelTime.BackColor = Color.AliceBlue;
                     }
                 }
-            }
+    }
         }

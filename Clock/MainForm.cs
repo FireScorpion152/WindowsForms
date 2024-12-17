@@ -22,6 +22,7 @@ namespace Clock
         public MainForm()
         {
             InitializeComponent();
+            SetVisibility(false);
             labelTime.BackColor = Color.AliceBlue;
 
             this.Location = new Point(Screen.PrimaryScreen.Bounds.Width - this.Width, 50);
@@ -44,7 +45,7 @@ namespace Clock
         }
 
     
-        void SetVisability(bool visible)
+        void SetVisibility(bool visible)
         {
             cbShowDate.Visible = visible;
             cbShowWeekDay.Visible = visible;
@@ -55,7 +56,7 @@ namespace Clock
         }
         private void btnHideControls_Click(object sender, EventArgs e)
         {
-            SetVisability(false);
+            cmShowControls.Checked = false;
         }
      
         private void labelTime_DoubleClick(object sender, EventArgs e)
@@ -73,7 +74,7 @@ namespace Clock
             //    MessageBoxButtons.OK,
             //    MessageBoxIcon.Information
             //    );
-            SetVisability (true);
+            SetVisibility (cmShowControls.Checked = true);
         }
 
        
@@ -196,5 +197,10 @@ namespace Clock
                         labelTime.BackColor = Color.AliceBlue;
                     }
                 }
+
+        private void cmShowControls_CheckedChanged(object sender, EventArgs e)
+        {
+            SetVisibility(cmShowControls.Checked);
+        }
     }
         }

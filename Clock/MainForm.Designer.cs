@@ -57,6 +57,7 @@
             this.btnHideControls = new System.Windows.Forms.Button();
             this.cbShowWeekDay = new System.Windows.Forms.CheckBox();
             this.trayIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.cmShowControls = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +72,7 @@
             // 
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmTopmost,
+            this.cmShowControls,
             this.toolStripSeparator1,
             this.cmShowDate,
             this.cmShowWeekDay,
@@ -243,6 +245,13 @@
             resources.ApplyResources(this.trayIcon, "trayIcon");
             this.trayIcon.DoubleClick += new System.EventHandler(this.trayIcon_DoubleClick);
             // 
+            // cmShowControls
+            // 
+            this.cmShowControls.CheckOnClick = true;
+            this.cmShowControls.Name = "cmShowControls";
+            resources.ApplyResources(this.cmShowControls, "cmShowControls");
+            this.cmShowControls.CheckedChanged += new System.EventHandler(this.cmShowControls_CheckedChanged);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -289,6 +298,7 @@
         private System.Windows.Forms.ToolStripMenuItem cmCF_Default;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem cmCF_SeaShell;
+        private System.Windows.Forms.ToolStripMenuItem cmShowControls;
     }
 }
 

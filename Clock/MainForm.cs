@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Diagnostics.SymbolStore;
 using System.Drawing;
 using System.Drawing.Text;
@@ -125,64 +126,38 @@ namespace Clock
             }
         }
 
-        private void cmCB_Red_CheckedChanged(object sender, EventArgs e)
-        {
-            if(cmCB_Red.Checked)
-            {
-                labelTime.BackColor = Color.Red;
-                cmCB_Green.Checked = false;
-                cmCB_Blue.Checked = false;
-                cmCB_Default.Checked = false;
+        //private void cmCB_Click(object sender, EventArgs e)
+        //{
+        //    ColorDialog dialog = new ColorDialog();
+        //    dialog.Color = labelTime.BackColor;
+        //    if(dialog.ShowDialog() == DialogResult.OK)
+        //    labelTime.BackColor = dialog.Color;
+        //}
 
-            }
-            else {
-                cmCB_Default.Checked = true;
-                labelTime.BackColor = Color.AliceBlue;
-            }
-        }
-
-        private void cmCB_Green_CheckedChanged(object sender, EventArgs e)
+        //private void cmCF_Click(object sender, EventArgs e)
+        //{
+        //    ColorDialog dialog = new ColorDialog();
+        //    dialog.Color = labelTime.ForeColor;
+        //    if (dialog.ShowDialog() == DialogResult.OK)
+        //        labelTime.ForeColor = dialog.Color;
+        //}
+        private void SetColor(object sender, EventArgs e)
         {
-            if (cmCB_Green.Checked)
+            ColorDialog dialog = new ColorDialog();
+            switch ((sender as ToolStripMenuItem).Text)
             {
-                labelTime.BackColor = Color.Green;
-                cmCB_Red.Checked = false;
-                cmCB_Blue.Checked = false;
-                cmCB_Default.Checked = false;
+                case "Background color": dialog.Color = labelTime.BackColor; break;
+                case "Foreground color": dialog.Color = labelTime.ForeColor; break;
             }
-            else
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
-                cmCB_Default.Checked = true;
-                labelTime.BackColor = Color.AliceBlue;
-            }
-        }
-
-        private void cmCB_Blue_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cmCB_Blue.Checked)
-            {
-                labelTime.BackColor = Color.Blue;
-                cmCB_Green.Checked = false;
-                cmCB_Red.Checked = false;
-                cmCB_Default.Checked = false;
-            }
-            else
-            {
-                cmCB_Default.Checked = true;
-                labelTime.BackColor = Color.AliceBlue;
-            }
-        }
-                private void cmCB_Default_CheckedChanged(object sender, EventArgs e)
-        {
-                cmCB_Red.Checked = false;
-                cmCB_Green.Checked = false;
-                cmCB_Blue.Checked = false;
-            if (!cmCB_Red.Checked&& !cmCB_Green.Checked && !cmCB_Blue.Checked)
-                    {
-
-                        cmCB_Default.Enabled = true;
-                        labelTime.BackColor = Color.AliceBlue;
-                    }
+                switch ((sender as ToolStripMenuItem).Text)
+                {
+                    case "Background color":labelTime.BackColor = dialog.Color; break;
+                    case "Foreground color":labelTime.ForeColor = dialog.Color; break;
                 }
             }
+               
         }
+    }
+}

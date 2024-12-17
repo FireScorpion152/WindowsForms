@@ -126,112 +126,58 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cmTopmost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="cmTopmost.Text" xml:space="preserve">
     <value>Topmost</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="cmShowDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="cmShowDate.Text" xml:space="preserve">
     <value>ShowDate</value>
   </data>
   <data name="cmShowWeekDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="cmShowWeekDay.Text" xml:space="preserve">
     <value>ShowWeekDay</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 6</value>
-  </data>
-  <data name="cmCB_Red.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="cmCB_Red.Text" xml:space="preserve">
-    <value>Red</value>
-  </data>
-  <data name="cmCB_Green.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="cmCB_Green.Text" xml:space="preserve">
-    <value>Green</value>
-  </data>
-  <data name="cmCB_Blue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="cmCB_Blue.Text" xml:space="preserve">
-    <value>Blue</value>
-  </data>
-  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 6</value>
-  </data>
-  <data name="cmCB_Default.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="cmCB_Default.Text" xml:space="preserve">
-    <value>Default</value>
+    <value>177, 6</value>
   </data>
   <data name="cmCB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="cmCB.Text" xml:space="preserve">
     <value>Background color</value>
   </data>
-  <data name="redToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
+  <data name="cmCF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="redToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Red</value>
-  </data>
-  <data name="greenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="greenToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Green</value>
-  </data>
-  <data name="blueToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="blueToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Blue</value>
-  </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 6</value>
-  </data>
-  <data name="defaultToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="defaultToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Default</value>
-  </data>
-  <data name="foregroundColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
-  </data>
-  <data name="foregroundColorToolStripMenuItem.Text" xml:space="preserve">
+  <data name="cmCF.Text" xml:space="preserve">
     <value>Foreground color</value>
   </data>
   <data name="cmColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="cmColor.Text" xml:space="preserve">
     <value>Color</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="cmExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="cmExit.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
   <data name="contextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 132</value>
+    <value>181, 154</value>
   </data>
   <data name="&gt;&gt;contextMenu.Name" xml:space="preserve">
     <value>contextMenu</value>
@@ -2690,72 +2636,6 @@
   <data name="&gt;&gt;cmCB.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmCB_Red.Name" xml:space="preserve">
-    <value>cmCB_Red</value>
-  </data>
-  <data name="&gt;&gt;cmCB_Red.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmCB_Green.Name" xml:space="preserve">
-    <value>cmCB_Green</value>
-  </data>
-  <data name="&gt;&gt;cmCB_Green.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmCB_Blue.Name" xml:space="preserve">
-    <value>cmCB_Blue</value>
-  </data>
-  <data name="&gt;&gt;cmCB_Blue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
-    <value>toolStripSeparator3</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmCB_Default.Name" xml:space="preserve">
-    <value>cmCB_Default</value>
-  </data>
-  <data name="&gt;&gt;cmCB_Default.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;foregroundColorToolStripMenuItem.Name" xml:space="preserve">
-    <value>foregroundColorToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;foregroundColorToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;redToolStripMenuItem1.Name" xml:space="preserve">
-    <value>redToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;redToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;greenToolStripMenuItem1.Name" xml:space="preserve">
-    <value>greenToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;greenToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;blueToolStripMenuItem1.Name" xml:space="preserve">
-    <value>blueToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;blueToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
-    <value>toolStripSeparator4</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;defaultToolStripMenuItem1.Name" xml:space="preserve">
-    <value>defaultToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;defaultToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
     <value>toolStripSeparator2</value>
   </data>
@@ -2779,6 +2659,12 @@
   </data>
   <data name="&gt;&gt;trayIcon.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmCF.Name" xml:space="preserve">
+    <value>cmCF</value>
+  </data>
+  <data name="&gt;&gt;cmCF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

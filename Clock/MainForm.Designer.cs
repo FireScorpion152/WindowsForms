@@ -39,17 +39,6 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.cmColor = new System.Windows.Forms.ToolStripMenuItem();
             this.cmCB = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmCB_Red = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmCB_Green = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmCB_Blue = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmCB_Default = new System.Windows.Forms.ToolStripMenuItem();
-            this.foregroundColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.greenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.blueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.defaultToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.cmExit = new System.Windows.Forms.ToolStripMenuItem();
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -57,6 +46,7 @@
             this.btnHideControls = new System.Windows.Forms.Button();
             this.cbShowWeekDay = new System.Windows.Forms.CheckBox();
             this.trayIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.cmCF = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,89 +106,15 @@
             // 
             this.cmColor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmCB,
-            this.foregroundColorToolStripMenuItem});
+            this.cmCF});
             this.cmColor.Name = "cmColor";
             resources.ApplyResources(this.cmColor, "cmColor");
             // 
             // cmCB
             // 
-            this.cmCB.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmCB_Red,
-            this.cmCB_Green,
-            this.cmCB_Blue,
-            this.toolStripSeparator3,
-            this.cmCB_Default});
             this.cmCB.Name = "cmCB";
             resources.ApplyResources(this.cmCB, "cmCB");
-            // 
-            // cmCB_Red
-            // 
-            this.cmCB_Red.CheckOnClick = true;
-            this.cmCB_Red.Name = "cmCB_Red";
-            resources.ApplyResources(this.cmCB_Red, "cmCB_Red");
-            this.cmCB_Red.CheckedChanged += new System.EventHandler(this.cmCB_Red_CheckedChanged);
-            // 
-            // cmCB_Green
-            // 
-            this.cmCB_Green.CheckOnClick = true;
-            this.cmCB_Green.Name = "cmCB_Green";
-            resources.ApplyResources(this.cmCB_Green, "cmCB_Green");
-            this.cmCB_Green.CheckedChanged += new System.EventHandler(this.cmCB_Green_CheckedChanged);
-            // 
-            // cmCB_Blue
-            // 
-            this.cmCB_Blue.CheckOnClick = true;
-            this.cmCB_Blue.Name = "cmCB_Blue";
-            resources.ApplyResources(this.cmCB_Blue, "cmCB_Blue");
-            this.cmCB_Blue.CheckedChanged += new System.EventHandler(this.cmCB_Blue_CheckedChanged);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            // 
-            // cmCB_Default
-            // 
-            this.cmCB_Default.CheckOnClick = true;
-            this.cmCB_Default.Name = "cmCB_Default";
-            resources.ApplyResources(this.cmCB_Default, "cmCB_Default");
-            this.cmCB_Default.CheckedChanged += new System.EventHandler(this.cmCB_Default_CheckedChanged);
-            // 
-            // foregroundColorToolStripMenuItem
-            // 
-            this.foregroundColorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.redToolStripMenuItem1,
-            this.greenToolStripMenuItem1,
-            this.blueToolStripMenuItem1,
-            this.toolStripSeparator4,
-            this.defaultToolStripMenuItem1});
-            this.foregroundColorToolStripMenuItem.Name = "foregroundColorToolStripMenuItem";
-            resources.ApplyResources(this.foregroundColorToolStripMenuItem, "foregroundColorToolStripMenuItem");
-            // 
-            // redToolStripMenuItem1
-            // 
-            this.redToolStripMenuItem1.Name = "redToolStripMenuItem1";
-            resources.ApplyResources(this.redToolStripMenuItem1, "redToolStripMenuItem1");
-            // 
-            // greenToolStripMenuItem1
-            // 
-            this.greenToolStripMenuItem1.Name = "greenToolStripMenuItem1";
-            resources.ApplyResources(this.greenToolStripMenuItem1, "greenToolStripMenuItem1");
-            // 
-            // blueToolStripMenuItem1
-            // 
-            this.blueToolStripMenuItem1.Name = "blueToolStripMenuItem1";
-            resources.ApplyResources(this.blueToolStripMenuItem1, "blueToolStripMenuItem1");
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
-            // 
-            // defaultToolStripMenuItem1
-            // 
-            this.defaultToolStripMenuItem1.Name = "defaultToolStripMenuItem1";
-            resources.ApplyResources(this.defaultToolStripMenuItem1, "defaultToolStripMenuItem1");
+            this.cmCB.Click += new System.EventHandler(this.SetColor);
             // 
             // toolStripSeparator2
             // 
@@ -243,6 +159,12 @@
             resources.ApplyResources(this.trayIcon, "trayIcon");
             this.trayIcon.DoubleClick += new System.EventHandler(this.trayIcon_DoubleClick);
             // 
+            // cmCF
+            // 
+            this.cmCF.Name = "cmCF";
+            resources.ApplyResources(this.cmCF, "cmCF");
+            this.cmCF.Click += new System.EventHandler(this.SetColor);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -277,18 +199,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem cmColor;
         private System.Windows.Forms.ToolStripMenuItem cmCB;
-        private System.Windows.Forms.ToolStripMenuItem cmCB_Red;
-        private System.Windows.Forms.ToolStripMenuItem cmCB_Green;
-        private System.Windows.Forms.ToolStripMenuItem cmCB_Blue;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem cmCB_Default;
-        private System.Windows.Forms.ToolStripMenuItem foregroundColorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem redToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem greenToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem defaultToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem cmCF;
     }
 }
 

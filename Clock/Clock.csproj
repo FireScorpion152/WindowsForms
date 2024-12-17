@@ -79,7 +79,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="fonts\a_AlternaSw.ttf" />
+    <Content Include="fonts\a_AlternaSw.ttf" />
     <None Include="Properties\DataSources\Clock.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\Clock.Properties.Settings.datasource" />
     <None Include="Properties\DataSources\MainForm.datasource" />

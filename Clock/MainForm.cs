@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics.SymbolStore;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
@@ -12,6 +13,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Clock
 {
@@ -24,7 +26,15 @@ namespace Clock
 
             this.Location = new Point(Screen.PrimaryScreen.Bounds.Width - this.Width, 50);
         }
+        void CustomFonts()
+        {
+            PrivateFontCollection pfc = new PrivateFontCollection();
 
+            pfc.AddFontFile(Path.Combine(Application.StartupPath, "a_AlternaSw.ttf"));
+
+            labelTime.Font = new Font(pfc.Families[0], 18, FontStyle.Regular);
+
+        }
         private void timer_Tick(object sender, EventArgs e)
         {
             labelTime.Text = DateTime.Now.ToString("hh:mm:ss tt", System.Globalization.CultureInfo.InvariantCulture);
@@ -58,19 +68,19 @@ namespace Clock
      
         private void labelTime_DoubleClick(object sender, EventArgs e)
         {
-            MessageBox.Show
-                (
-                "Вы два раза щелкнули мышью по времени и теперь Вы управляете временем!",
-                "Info",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-                );
-            MessageBox.Show(
-                "Шучу, вжух и окно увеличилось",
-                "Info",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-                );
+            //MessageBox.Show
+            //    (
+            //    "Вы два раза щелкнули мышью по времени и теперь Вы управляете временем!",
+            //    "Info",
+            //    MessageBoxButtons.OK,
+            //    MessageBoxIcon.Information
+            //    );
+            //MessageBox.Show(
+            //    "Шучу, вжух и окно увеличилось",
+            //    "Info",
+            //    MessageBoxButtons.OK,
+            //    MessageBoxIcon.Information
+            //    );
             SetVisability (true);
         }
 
